@@ -11,3 +11,12 @@
 @interface CWViewController : UIViewController
 
 @end
+
+@interface Progress : NSObject
+
+@property (nonatomic) float value;
+@property (nonatomic,copy) NSString* text;
+
+- (id) initWithValue:(float)progress andText:(NSString*)text;
+
+@end
